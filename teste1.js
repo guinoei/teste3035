@@ -1,21 +1,8 @@
-function print2largest(arr, arr_size) {
-    let i, first, second;
-
-    // There should be atleast two elements
-    if (arr_size < 2) {
-        document.write(" Invalid Input ");
-        return;
-    }
-
-   
-    arr.sort();
-
-    for (i = arr_size - 2; i >= 0; i--)
-      
+function getnumber() {
+    let numbers = [1, 9, 3, 5, 4, 8];
+    let orders = numbers.sort();
+  
+    return orders[orders.length-2];
 }
 
-
-
-let arr= [ 12, 35, 1, 10, 34, 1 ];
-let n = arr.length;
- console.log(arr, n)
+console.log(getnumber())
